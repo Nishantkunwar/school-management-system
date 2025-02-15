@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <header class="head">
+        <nav class="navigation">
+            <img class="logo" src="logo.jpg" alt="Logo not found!">
+            <ul class="nav">
+                <li class="box"><a href="#">HOME</a></li>
+                <li class="box"><a href="#">TEACHERS</a></li>
+                <li class="box"><a href="#">STUDENTS</a></li>
+                <li class="box"><a href="#">CONTACT US</a></li>
+                <li class="box"><a href="#">HELP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section1">
+        <img class="img1" src="collage.jpg" alt="Image not found!">
+    </section>
+    <hr>
+    <section class="section2">
+        <div class="container">
+            <h1>WELCOME TO OUR SCHOOL MANAGEMENT</h1><br>
+            <p id="p1">Our college's school management system is a centralized platform designed to simplify administrative processes, foster seamless communication, and enhance the overall academic experience for students, faculty, and staff.</p>
+            <button id="btn1">more details!</button>
+        </div>
+    </section>
+    <hr>
+    <section class="section3">
+        <h2 class="h2">Our Services</h2>
+        <div class="headdiv">
+                <div class="card">
+                    <h2>Students</h2>
+                    <p>Manage student records, attendance, and grades.</p>
+                    <button><a class="a" href="http://localhost/school/display.php" target="_blank">Open</a></button>
+                </div>
+        
+                <div class="card">
+                    <h2>Teachers</h2>
+                    <p>Manage teacher profiles, schedules, and tasks.</p>
+                    <button onclick="teacher()">Open</button>
+                </div>
+        
+                <div class="card">
+                    <h2>Classes</h2>
+                    <p>View and organize class schedules.</p>
+                    <button onclick="routine()">Open</button>
+                </div>
+               
+                
+               
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 School Management System. All Rights Reserved.</p>
+    </footer>
+</body>
+    <script>
+        function routine(){
+            window.open("class.html", "_blank");
+        }
+        function exam(){
+            window.open("examination.html", "_blank");
+        }
+        function admin(){
+            window.open("admin.html", "_blank");
+        }
+        
+
+    </script>
+</html>
